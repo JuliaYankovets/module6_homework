@@ -3,9 +3,15 @@
 // Используйте Arrow Function синтаксис.
 // Протестируйте функцию на любых значениях и выведите результат в консоль.
 
-let square = (x, n) => {
-    let result = x ** n;
-    console.log(result);
+
+let pow = (x, n) => {
+    let result = 1;
+    for (let i = 0; i < n; i++) {
+        result *= x;
+    }
+
+    return result;
 
 }
-square(5, 2)
+
+console.log(pow(5, 3))
